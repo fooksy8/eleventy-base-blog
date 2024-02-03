@@ -13,22 +13,32 @@
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="w-100" src="\img\fwd-high-resolution-logo.png"></a>
+        <a class="navbar-brand" href="#"><img class="w-100" src="\img\fwd-high-resolution-logo.png" alt="logo-image"></a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav fs-2">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#">Archive</a>
-            <a class="nav-link" href="#">About</a>   
+            <a class="nav-link" href="/content/about/index.md">About</a>   
           </div>
         </div>
       </div>
     </nav>
-	{{ content | safe }}
 
+	{{ content | safe }}
+ 
+ <footer class="bg-primary fixed-bottom">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 text-end">
+        <p class="text-white pt-3">Created by Shaun Foulkes</p>
+      </div>
+    </div>
+  </div>
+</footer>
 	<!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
