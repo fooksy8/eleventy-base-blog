@@ -6,6 +6,8 @@ eleventyNavigation:
 ---
 <h1>About me</h1>
 
-<img class="w-25" src="">
+<div class="container-lg">
+<img class="w-25" src="\img\Screenshot_20240125-054325.png">
+</div>
 
-<p>Hi my name's Shaun Foulkes, I'm currently a brewer working at Theakstons.Ltd hoping to become a web delveloper in the near future.</p>
+<p class="pt-3">Hi my name's Shaun Foulkes distinctly average golfer, currently working as a brewer at Theakstons.Ltd hoping to become a web delveloper in the near future.</p>
