@@ -4,3 +4,35 @@ eleventyNavigation:
   key: Subscribe
   order: 4
 ---
+<h2>If you would like to subscribe and recieve blog post notifications please fill in your details below:</h2>
+
+    <form method="post" class="w-10" netlify>
+     <div class="form-group">
+  <label for="first-name" class="mt-2">First Name: 
+  <input id="first-name" name="first-name" type="text" required class="form-control" />
+  </label>
+  </div>
+  <div class="form-group">
+        <label for="last-name" class="mt-2">Last Name: 
+        <input id="last-name" name="last-name" type="text" required class="form-control"/>
+        </label>
+        </div>
+        <div class="form-group">
+        <label for="email" class="mt-2">Email: 
+        <input id="email" name="email" type="email" required class="form-control"/>
+        </label>
+        </div>
+        <div class="form-group">
+        <label for="comments" class="mt-2">Any comments regarding the blog will be greatly appreciated:
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I think your blog is rubbish because..." class="form-control"></textarea>
+        </label>
+        </div>
+        <div class="form-group">
+        <label for="terms-and-conditions" class="mt-2">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="form-control" /> I accept the <a href="#">terms and conditions</a>
+      </label>
+      </div>
+      <input class="btn btn-primary mt-2" type="submit" value="Submit" >
+     
+  </form>
+  
