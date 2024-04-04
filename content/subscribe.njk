@@ -9,22 +9,22 @@ eleventyNavigation:
     <form method="POST" class="w-10" name="suscribe-contact" netlify>
      <div class="form-group">
   <label for="first-name" class="mt-2">First Name: 
-  <input id="first-name" name="first-name" type="text" required class="form-control" />
+  <input id="first-name" name="first-name" type="text" required class="form-control text-center" />
   </label>
   </div>
   <div class="form-group">
         <label for="last-name" class="mt-2">Last Name: 
-        <input id="last-name" name="last-name" type="text" required class="form-control"/>
+        <input id="last-name" name="last-name" type="text" required class="form-control text-center"/>
         </label>
         </div>
         <div class="form-group">
         <label for="email" class="mt-2">Email: 
-        <input id="email" name="email" type="email" required class="form-control"/>
+        <input id="email" name="email" type="email" required class="form-control text-center"/>
         </label>
         </div>
         <div class="form-group">
         <label for="comments" class="mt-2">Any comments regarding the blog will be greatly appreciated:
-          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I think your blog is rubbish because..." class="form-control"></textarea>
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I think your blog is rubbish because..." class="form-control text-center"></textarea>
         </label>
         </div>
         <div class="form-group">
@@ -35,4 +35,22 @@ eleventyNavigation:
       <input class="btn btn-primary mt-2" type="submit" value="Submit" >
      
   </form>
-  
+<script>
+  const form = document.querySelector('form[name="suscribe-contact"]');
+  const firstNameInput = document.getElementById('first-name');
+  const lastNameInput = document.getElementById('last-name');
+  const emailInput = document.getElementById('email');
+  const commentsInput = document.getElementById('comments');
+  const termsCheckbox = document.getElementById('terms-and-conditions');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (!firstNameInput.value || !lastNameInput.value || !emailInput.value) {
+      alert('Please fill out all required fields.');
+      return;
+    }
+
+    alert('Form submitted successfully!'); 
+  });
+</script>
