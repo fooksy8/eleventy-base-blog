@@ -1,7 +1,7 @@
 ---
-title: Third post.
-description: third post.
-date: 2018-08-24
+title: Functions and Control Flow Practical.
+description: Functions and Control Flow Practical.
+date: 2024-02-22
 tags:
   
 ---
