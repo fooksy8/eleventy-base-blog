@@ -1,6 +1,6 @@
 ---
-title: Fifth post.
-date: 2023-01-23
+title: Loops, Arrays and Objects.
+date: 2024-03-07
 draft: true
 ---
 
